@@ -1,0 +1,8 @@
+# Web inference runtime. Use Python 3.12 and the model's original versions.
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.15.1
+scikit-learn==1.6.1
+joblib==1.4.2
+fastapi>=0.115,<1.0
+uvicorn>=0.30,<1.0

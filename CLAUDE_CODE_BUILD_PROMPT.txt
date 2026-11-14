@@ -1,0 +1,22 @@
+Build TrustLab as a complete, cinematic, interactive, production-quality web experience using the existing TrustLab_Project repository and the attached build brief.
+
+FIRST read `CLAUDE.md` and `docs/TRUSTLAB_WEB_BUILD_SPEC.md` fully, then inspect the existing README, PROJECT_NOTES, Python ML package, saved model artifacts, research figures, dependencies, and data schema. Do not assume an API already exists; confirm actual functions. Preserve the trained models, notebooks, research results, and original data.
+
+Explicitly locate, open, and follow my installed skills before their respective implementation work:
+- modern-web-design — overall UI/UX concept, design system, responsiveness, accessibility and performance.
+- motion-framer — React micro-interactions, state transitions, gameplay feedback and reveal sequences.
+- gsap-scrolltrigger — cinematic but purposeful landing and Research Lab scrollytelling.
+- react-three-fiber — distinctive, performant 3D trust-network hero / optional reveal scene.
+- threejs-webgl — underlying 3D rendering, materials, lighting, cleanup and optimization guidance; do not create a duplicate Three renderer.
+Read their SKILL.md files, relevant bundled references, and explain which skill you used for each feature. Do not merely name-drop the skills.
+
+WORKFLOW:
+1. First present a concise original visual concept, page map, architecture and stack with a skill-use rationale and performance/accessibility approach.
+2. Then proceed immediately to implementation within the repository, not just a design proposal or scaffold. Prioritize backend and a truly playable complete game before visual polish.
+3. Implement all five screens: Landing, Experiment Setup, Trust Arena, Behavioral Reveal, and Research Lab. Build React + TypeScript + Vite frontend, FastAPI backend, and reuse the real K-Means and integrated Logistic Regression artifacts.
+4. Support 12/25 rounds, fixed/changing simulated partners, accurate payoffs, real precommitted AI predictions, sealed reveal, session state, real behavioral features, correct strategy labels, and research results sourced from the existing project. Clearly distinguish simulations from historical evidence and label short-session clusters preliminary.
+5. Make the website original, refined, highly interactive, responsive, performant, accessible, and polished. Use animation and 3D intentionally, not everywhere. Provide reduced-motion and no-WebGL fallbacks.
+6. Add actual API/ML/gameplay tests, frontend checks, error handling, reproducible dependencies and local/deployment instructions. Run available tests and fix failures.
+7. At the end, report files changed, skills actually loaded, what is working, tests actually run, commands to start locally, and concrete steps to deploy the frontend and backend. Never claim fake API predictions or unverified test success.
+
+Critical: do NOT allow the AI to see the current player move before its prediction for that round is locked, and do NOT use the player's current move to generate the supposedly simultaneous opponent move. Do not treat K-Means closeness as calibrated probability. Do not stop after the initial proposal; implement the entire functional MVP and make it presentation-ready.
