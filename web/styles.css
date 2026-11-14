@@ -30,3 +30,52 @@
 .mp-bottom-action {display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; margin:30px 0 55px}
 .mp-bottom-action p {max-width:460px; color:#9baaa6; font-size:12px}
 @media(max-width:700px){.mp-status-card {padding:36px 17px}.mp-bottom-action{justify-content:center}.mp-bottom-action p{text-align:center}}
+
+/* ── THE LAST GRID ──
+   Narrative layer only. No game or ML behavior is modified. */
+.lastgrid-briefing{
+ display:grid;grid-template-columns:minmax(0,1.07fr) minmax(0,.93fr);
+ position:relative;overflow:hidden;border:1px solid rgba(154,207,185,.29);
+ background:radial-gradient(ellipse at 85% 35%,rgba(53,102,108,.19),transparent 58%),
+            linear-gradient(130deg,#15232b 0%,#0d1822 72%);
+ margin:44px 0 82px;min-height:630px;
+}
+.grid-briefing-copy{padding:clamp(28px,4.6vw,68px);position:relative;z-index:2}
+.grid-briefing-copy h2{font-family:var(--headline);letter-spacing:-.075em;font-size:clamp(46px,5.4vw,84px);line-height:.98;margin:29px 0 22px}
+.grid-briefing-copy h2 em,.grid-epilogue h2 em{color:var(--green);font-style:normal}
+.grid-briefing-copy>p{max-width:610px;color:#bac9c8;font-size:14px;line-height:1.9;margin:13px 0}
+.grid-briefing-copy .grid-lead{font-size:clamp(17px,2vw,22px);line-height:1.5;color:#edf0eb;max-width:570px}
+.grid-directives{display:grid;gap:14px;margin:26px 0}
+.grid-directives>div{display:flex;gap:17px;padding:15px 17px;border-left:2px solid #74b599;background:rgba(40,89,76,.17)}
+.grid-directives>div:last-child{border-left-color:#bd8268;background:rgba(120,67,54,.15)}
+.grid-directive-icon{display:flex;align-items:center;justify-content:center;flex:0 0 33px;height:33px;border:1px solid #629b86;color:#a5dfbf}
+.grid-divert-icon{border-color:#b98d75;color:#e9aa8d}
+.grid-directives strong{font-size:10px;letter-spacing:.12em;color:#edf1e9}
+.grid-directives p{font-size:12px;line-height:1.65;color:#b3c2be;margin:6px 0 0}
+.grid-briefing-copy>p.grid-question{color:#e6e8df;font-style:italic;border-top:1px solid #314a4d;padding-top:18px;margin-top:23px}
+.grid-observer{display:flex;gap:16px;align-items:flex-start;margin:23px 0 27px}
+.grid-observer-icon{color:#a1d7c3;border:1px solid #5b988b;display:grid;place-items:center;flex:0 0 37px;height:37px;border-radius:50%;font-size:22px}
+.grid-observer p{font-size:12px;color:#b3c5c2;line-height:1.8;margin:0;max-width:520px}
+.grid-observer strong{font-size:10px;letter-spacing:.13em;color:#abdac7}
+.grid-visual{position:relative;min-height:450px;align-self:stretch;overflow:hidden;background:radial-gradient(ellipse at 51% 69%,#244454 0%,#12242f 38%,transparent 74%)}
+.grid-visual:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#101d26 0%,transparent 24%),linear-gradient(0deg,#0e1a23 0%,transparent 52%)}
+.grid-visual-haze{position:absolute;left:9%;top:5%;width:88%;aspect-ratio:1;border:1px solid rgba(105,166,155,.2);border-radius:50%;box-shadow:0 0 0 50px rgba(108,180,154,.025),0 0 0 140px rgba(108,180,154,.02)}
+.grid-visual svg{position:absolute;bottom:0;width:120%;height:85%;left:-10%;opacity:.97}
+.grid-visual-signal{position:absolute;right:30px;bottom:30px;z-index:2;font-size:9px;letter-spacing:.16em;color:#d4dbd3;display:flex;align-items:center;gap:11px}
+.mission-setup-heading{scroll-margin-top:26px;margin:0 0 34px;padding-bottom:20px;border-bottom:1px solid #34514f}
+.mission-setup-heading h2{margin:16px 0 4px;font-family:var(--headline);font-size:clamp(28px,3.6vw,47px);letter-spacing:-.055em;line-height:1.1}
+.mission-setup-heading p{color:#afbebd;margin:0;font-size:14px}
+.grid-choice-context{min-width:0}
+.grid-choice-context .move-button{width:100%}
+.grid-choice-context>p{margin:10px 0 2px!important;text-align:center!important;font-size:10px!important;line-height:1.55;color:#b5c6c1!important;letter-spacing:.04em}
+.grid-outcome-story{display:grid;gap:9px;padding:10px 0 25px}
+.grid-outcome-story>span{font-size:9px;letter-spacing:.18em;font-weight:750;color:#b6cfc0}
+.grid-outcome-story h2{margin:0;line-height:1.05}
+.grid-outcome-story p{color:#bcc9c4;max-width:660px;line-height:1.75;margin:0 auto;font-size:14px}
+.grid-epilogue{margin-top:48px;padding:38px 45px;border:1px solid #43675b;background:radial-gradient(ellipse at 95% 0,rgba(67,111,96,.14),transparent 65%),#102227}
+.grid-epilogue h2{font-size:clamp(32px,4.3vw,63px);letter-spacing:-.06em;line-height:1.09;margin:21px 0 14px}
+.grid-epilogue p{color:#cbd6cd;max-width:720px;line-height:1.9;font-size:16px;margin:0}
+.grid-epilogue>div{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+.grid-epilogue>div span{font-size:9px;letter-spacing:.12em;border:1px solid #55776c;padding:9px 12px;color:#b6d9c5}
+@media(max-width:1000px){.lastgrid-briefing{grid-template-columns:1fr}.grid-visual{min-height:240px;grid-row:1}.grid-visual svg{width:100%;height:100%;left:0}.grid-briefing-copy{padding:36px 40px}.grid-visual-signal{bottom:18px}}
+@media(max-width:570px){.lastgrid-briefing{margin:25px 0 58px}.grid-briefing-copy{padding:26px 19px 32px}.grid-briefing-copy h2{font-size:clamp(43px,10.5vw,66px);margin:20px 0}.grid-briefing-copy .grid-lead{font-size:18px}.grid-briefing-copy>p{font-size:13px}.grid-visual{min-height:180px}.grid-visual-signal{font-size:8px;right:11px;bottom:10px}.grid-directives>div{gap:10px;padding:13px 10px}.grid-directives strong{font-size:9px}.grid-directives p{font-size:11px}.grid-choice-context>p{font-size:10px!important}.grid-epilogue{margin-top:22px;padding:28px 18px}.grid-epilogue h2{font-size:38px}.grid-epilogue p{font-size:14px}.grid-epilogue>div span{font-size:8px}}

@@ -72,3 +72,7 @@ The current matchmaking service uses **in-memory state and HTTP polling**, optim
 ## Scientific scope
 
 In this version, the human opponent remains the **same partner for the entire match** (fixed-partner condition). Shuffled-human-partner experimental sessions would require a multi-player tournament/match pool and a different data protocol. The original shuffled-partner *simulated* scenario remains in the single-player experience. Do not treat new multiplayer visitor sessions as if they were the original 188 research participants.
+
+## The Last Grid — story layer
+
+This version includes an optional fictional energy-grid scenario to help players understand the Prisoner's Dilemma. The mission briefing appears on the multiplayer join page, each round is presented as an energy-distribution cycle, and the final report begins with a narrative conclusion. The narrative does not modify the game rules, matchmaking, points, predictions, or behavioral model. Read [`docs/THE_LAST_GRID_STORY.md`](docs/THE_LAST_GRID_STORY.md) for the story text and where it appears.
